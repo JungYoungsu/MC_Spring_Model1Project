@@ -4,6 +4,7 @@
     pageEncoding="EUC-KR"%>
 <%
 	// 1. 사용자 입력정보 추출
+	request.setCharacterEncoding("EUC-KR");
 	String title = request.getParameter("title");
 	String writer = request.getParameter("writer");
 	String content = request.getParameter("content");
